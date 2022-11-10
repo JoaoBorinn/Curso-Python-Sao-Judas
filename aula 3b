@@ -1,0 +1,20 @@
+#criaçao de funçoes
+
+preco = 1999.90
+# calcular 5% de imposto guardar na variavel imposto e exibir na tela
+imposto = preco * 0.05
+print (imposto)
+#criar uma funçao calcular_imposto() que calcular um imposto de 5% e retorna a quem pediu
+#declaçao da funçao(como ela funciona)
+def calcular_imposto(preco_produto):
+  imposto = preco_produto * 0.07
+  return imposto
+  #aqui é o uso 
+preco = 299
+imposto = calcular_imposto(preco)
+print(imposto)
+#agora calcular imposto a 7%
+valores = [1.99, 24.50, 78.27, 1515.5]
+# se eu quiser calcular os impostos em diversos valores
+for valor in valores:
+  print(f" o imposto de {valor} é {calcular_imposto(valor)}")
